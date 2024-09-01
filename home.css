@@ -27,7 +27,7 @@ body {
 }
 
 .nome {
-    font-family: 'Montserrat Black';
+    font-family: 'Montserrat black';
     font-size: 50px;
 }
 
@@ -35,29 +35,48 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 h1{
     margin-top: 120px;
-    font-family: 'Montserrat Black';
+    font-family: 'Montserrat black';
     font-size: 40px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+    background-color:  #0088fff8;
+}
+
+h1{
+    margin-top: 50px;
+    font-family: 'Montserrat black';
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+    background-color:  #0088fff8;
 }
 
 p{
     margin-top: 50px;
+    width: 50%;
     margin-right: 100px;
     font-family: 'Montserrat medium';
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 20px rgba(0,0,0,100);
 
 }
 
+b{
+    font-size: 40px;
+    color: #0088fff8;
+    background-color: rgb(255, 255, 255);
+
+    
+}
 .esquerdinha{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -67,9 +86,67 @@ p{
     border: 2px solid black;
     width: 400px;
     height: 500px;
-    background-image: url(imagens/pexels-pixabay-275484.jpg);
     border-radius: 50px;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.75);
     background-size: cover;
     background-position: center;
+    background-image:url(imagens/pexels-pixabay-275484.jpg);
+
+    
+}
+
+.boxx { 
+    margin-top: 50px;
+    margin-right: 50px;
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    background-image:url(imagens/pexels-jvdm-1454805.jpg);
+
+    
+}
+
+.box { 
+    margin-top: 50px;
+    margin-right: 50px;
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    background-image:url(imagens/pexels-jovydas-2462015.jpg);
+
+    
+}
+
+button{
+    background: rgb(255, 255, 255);
+    height: 70px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat black';
+    
+}
+
+@keyframes pulse {
+    0% { transform: scale(1);}
+    50% { transform: scale(0.55);}
+    100% { transform: scale(1);}
+    
+}
+
+.pulse {
+    animation: pulse 0.3s ease-in-out;
 }
